@@ -1,4 +1,4 @@
-package Dijkstra;
+package Utility;
 
 public class Pair {
 	private Integer first;
@@ -7,16 +7,16 @@ public class Pair {
 	Pair() {
 	}
 
-	Pair(Integer first, Integer second) {
+	public Pair(Integer first, Integer second) {
 		this.first = first;
 		this.second = second;
 	}
 
-	Integer getFirst() {
+	public Integer getFirst() {
 		return first;
 	}
 
-	Integer getSecond() {
+	public Integer getSecond() {
 		return second;
 	}
 }

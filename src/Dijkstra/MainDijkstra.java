@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import Utility.Pair;
+
 public class MainDijkstra {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -31,7 +33,21 @@ public class MainDijkstra {
 
 			Integer src = scanner.nextInt();
 
-			for (Integer value : Dijkstra.dijkstra(src, adj, nodes)) {
+			System.out.print("Basic Dijkstra : ");
+
+			Dijkstra algo = new BasicDijkstra();
+
+			for (Integer value : algo.dijkstra(src, adj, nodes)) {
+				System.out.print(value + " ");
+			}
+
+			System.out.println();
+
+			System.out.print("Best  Dijkstra : ");
+
+			algo = new BestDijkstra();
+
+			for (Integer value : algo.dijkstra(src, adj, nodes)) {
 				System.out.print(value + " ");
 			}
 
