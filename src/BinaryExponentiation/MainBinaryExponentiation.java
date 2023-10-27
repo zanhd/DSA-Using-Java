@@ -9,7 +9,7 @@ public class MainBinaryExponentiation {
 			int n = scanner.nextInt();
 			int M = scanner.nextInt();
 
-			System.out.println("pow(a, n) % M : " + BinaryExponentiation.pow(a, n, M));
+			System.out.println("pow(" + a + ", " + n + ") % " + M + " : " + BinaryExponentiation.pow(a, n, M));
 
 			scanner.close();
 		}
