@@ -19,7 +19,7 @@ public class BestDijkstra implements Dijkstra {
 			if (a.getFirst() > b.getFirst()) {
 				return 1; // Swap while sorting
 			} else if (a.getFirst() == b.getFirst()) {
-				if (a.getFirst() > b.getFirst()) {
+				if (a.getSecond() > b.getSecond()) {
 					return 1; // swap
 				} else {
 					return -1; // dont swap
