@@ -21,8 +21,10 @@ public class BestDijkstra implements Dijkstra {
 			} else if (a.getFirst() == b.getFirst()) {
 				if (a.getSecond() > b.getSecond()) {
 					return 1; // swap
-				} else {
+				} else if(a.getSecond() < b.getSecond()) {
 					return -1; // dont swap
+				} else {
+					return 0; //no need to change order
 				}
 			} else {
 				return -1;
